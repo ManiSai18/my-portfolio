@@ -1,14 +1,12 @@
 {
-"builds": [1
-"src": "MSP/wsgi-py",
-"use": "@vercellpython",
-"config": { "maxLambdaSize": "15mb",
-"runtime": "python3.9% )
-J，
-"routes" :
-［
-'sre"："。*）”。
-"dest" : "MSP/wsgi.py"
-}
-]
+    "builds": [{
+        "src": "MSP/wsgi-py",
+        "use": "@vercellpython",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        }],
+        "routes": [
+            {
+        "src": "/(.*)",
+        "dest" : "MSP/wsgi.py"
+        }]
 }
